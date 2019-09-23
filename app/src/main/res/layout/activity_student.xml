@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sayem.geeknot.crud.StudentActivity">
+
+
+<!--    <Button-->
+<!--        android:id="@+id/test"-->
+<!--        style="@style/Widget.AppCompat.Button.Colored"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:background="#009688"-->
+<!--        android:text="Edit"-->
+<!--        android:textColorLink="#00A72B2B" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#009688"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#FFC107"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:id="@+id/btn_teacher_modify"/>
+
+    <ListView
+        android:id="@+id/teachers_lv"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:layout_editor_absoluteX="0dp">
+
+    </ListView>
+
+</RelativeLayout>
